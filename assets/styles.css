@@ -2,7 +2,6 @@ html {
   color: #4d4e53;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
-  margin: 20px;
 }
 
 #navbar {
@@ -53,10 +52,34 @@ header {
 }
 
 #main-doc {
-  margin-left: 320px;
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
 }
 
 #main-doc header {
   text-align: left;
   margin: 0px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0 0 20px;
+}
+
+section code {
+  display: block;
+  text-align: left;
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  line-height: 2;
 }
