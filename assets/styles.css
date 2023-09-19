@@ -84,7 +84,6 @@ section code {
 }
 
 @media screen and (max-width: 575px) {
-
   html {
     line-height: 1;
   }
@@ -101,7 +100,7 @@ section code {
   }
 
   header {
-    font-size: 2vw;
+    font-size: .5em;
   }
 
   #navbar li {
@@ -129,7 +128,17 @@ section code {
   #main-doc {
     position: absolute;
     margin-left: 100px;
-    padding: 20px;
+    padding: 10px; /* Adjust padding for better spacing */
     margin-bottom: 50px;
   }
+
+  .main-section {
+    margin: 15px 0; /* Increase margin for better separation between sections */
+  }
+
+  .main-section article {
+    font-size: .5em; /* Reduce the article font size */
+  }
 }
+
+
