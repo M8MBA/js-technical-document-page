@@ -83,14 +83,16 @@ section code {
   line-height: 2;
 }
 
+/* Media query */
+
 @media screen and (max-width: 575px) {
   html {
-    line-height: 1;
+    line-height: 1.5;
   }
 
   #navbar {
-    position: absolute;
-    min-width: 80px;
+    position: fixed;
+    min-width: 95px;
     top: 0;
     left: 0;
     width: 50px;
@@ -99,8 +101,15 @@ section code {
     border-color: rgba(0, 22, 22, 0.4);
   }
 
+  #navbar header {
+    font-size: .7em;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   header {
-    font-size: .5em;
+    font-size: 1em;
+    font-weight: bold;
   }
 
   #navbar li {
@@ -109,17 +118,18 @@ section code {
     list-style: none;
     position: relative;
     width: 100%;
+    padding: 10px 0;
   }
 
   #navbar a {
     display: block;
-    padding: 5px 15px;
+    padding: 3px 6px;
   }
 
   .nav-link {
     text-decoration: none;
     color: #4d4e53;
-    font-size: 2vw;
+    font-size: 2.5vw;
     display: flex;
     flex-direction: column;
     line-height: 1;
@@ -127,8 +137,8 @@ section code {
 
   #main-doc {
     position: absolute;
-    margin-left: 100px;
-    padding: 10px; /* Adjust padding for better spacing */
+    margin-left: 90px;
+    padding: 8px; /* Adjust padding for better spacing */
     margin-bottom: 50px;
   }
 
@@ -137,7 +147,11 @@ section code {
   }
 
   .main-section article {
-    font-size: .5em; /* Reduce the article font size */
+    font-size: .8em; /* Reduce the article font size */
+  }
+
+  #reference li {
+    font-size: .8em; /* Reduce the article font size */
   }
 }
 
